@@ -1,0 +1,21 @@
+name: "CodeQL Config"
+
+disable-default-queries: false
+
+queries:
+  - uses: security-and-quality
+  - uses: security-extended
+  - uses: .
+    from: userapp/secrets
+
+paths:
+  - 'UserApp/src/main/java'
+
+paths-ignore:
+  - '**/test/**'
+  - '**/generated/**'
+  - '**/target/**'
+
+query-filters:
+  - exclude:
+      tags contain: test
