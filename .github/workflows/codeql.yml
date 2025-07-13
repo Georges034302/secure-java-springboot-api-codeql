@@ -38,7 +38,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          cd session2/java/UserApp
+          cd UserApp
           mvn -B clean compile --no-transfer-progress
 
       - name: Perform CodeQL Analysis

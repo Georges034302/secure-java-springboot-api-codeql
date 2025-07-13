@@ -222,8 +222,6 @@ name: Java CI
 
 on:
   push:
-    paths:
-      - 'session2/java/**'
     branches: [main]
 
 jobs:
@@ -332,7 +330,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          cd session2/java/UserApp
+          cd UserApp
           mvn -B clean compile --no-transfer-progress
 
       - name: Perform CodeQL Analysis
@@ -391,7 +389,7 @@ codeql pack init
 codeql database create db \
   --language=java \
   --command "mvn clean compile" \
-  --source-root session2/java/UserApp \
+  --source-root UserApp \
   --overwrite
 ```
 
