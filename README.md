@@ -863,6 +863,6 @@ curl -H "Authorization: bearer $GITHUB_TOKEN" \
 ---
 
 #### 🧑‍🏫 Author: Georges Bou Ghantous  
-<sub><i>This repository demonstrates secure coding practices for Spring Boot applications using GitHub Copilot, CodeQL, Dependabot, and GitHub Advanced Security — with real-world workflows for layered architecture, vulnerability scanning, and automated CI/CD.</i></sub>
+<sub><i><span style="color:#B0B0B0">👤 Author: Dr. Georges Bou Ghantous</span></i></sub>
 
 
